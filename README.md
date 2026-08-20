@@ -1,80 +1,75 @@
-# 🎮 QuizArena — Learn. Practice. Compete.
+# ⚡ AlgoForge (CodeX) — Interactive DSA Visual Learning Platform
 
-**QuizArena** is a modern, full-stack educational SaaS platform combining real-time Kahoot/Wayground-style live multiplayer quizzes, QuizKhelo-style self-paced practice quizzes, interactive DSA data structure visualizers, and dedicated role-based portals for **Students** and **Teachers**.
+**AlgoForge** (in repo **CodeX**) is a modern, dark-first, highly visual Data Structures and Algorithms (DSA) learning platform and simulator. Designed like a professional educational SaaS tool rather than a basic college project, AlgoForge allows users to understand DSA by seeing every operation, pointer movement, comparison, tree restructuring, and greedy/DP decision step-by-step in real time.
+
+> *"See the logic. Trace the execution. Master DSA."*
 
 ---
 
-## 🌟 Key Features
+## 🌟 Features & Labs
 
-### 1. Dual Role-Based Accounts & Auth
-- **Student Flow**: Dedicated registration and login flows tracking XP, level progression, daily practice streaks, badges, global/class leaderboards, and recent attempt history.
-- **Teacher Portal**: Separate dashboard equipped with quiz creation tools, AI question generation, classroom live session hosting, student performance analytics, and downloadable CSV gradebook reports.
-- **Role Security**: Protected routes and API authorization ensuring students cannot access teacher controls.
+### 1. 🎨 Dark-First Glassmorphism Design
+- **Cyberpunk / Education Aesthetic**: Deep space background (`#050810`), glassmorphic frosted cards, subtle gradients, and neon state highlights (Cyan, Purple, Emerald, Yellow, Pink).
+- **Animated Hero Section**: Real-time live visual simulation of graph traversals, binary search trees, and array operations.
+- **Global Search / Command Palette (`Ctrl + K`)**: Instant keyboard navigation to jump across Data Structures, Algorithms, Labs, Quizzes, Practice, and Cheat Sheets.
 
-### 2. Kahoot / Wayground-Style Live Multiplayer Rooms
-- **6-Digit Room Codes & QR Codes**: Teachers generate unique 6-digit join codes (e.g. `482731`) and instant QR codes for classroom scanning.
-- **Real-Time Socket.IO Engine**: Synchronized lobby, real-time question broadcast, server-side countdown timers, speed bonuses, and live leaderboard position shifts.
-- **Classroom Host Display (`/host/:roomCode`)**: Optimized view for classroom projectors showing real-time student join cards, countdown rings, and round leaderboards.
+### 2. 🗂️ Data Structure Visualizers
+Every data structure features interactive manipulation, memory address & index display, complexity analysis, and code templates (C++, Java, Python, JavaScript):
+- **Arrays**: Insert, delete, search, update, reverse, rotate, and traverse.
+- **Linked Lists**: Singly, Doubly, and Circular Linked Lists with pointer animation (head/tail, previous/next pointers).
+- **Stack & Queue**: Vertical stack with LIFO animations, horizontal queues with FIFO/Circular Queue indicators.
+- **Hash Table**: Hash function computation visualizer with modulo bucket mapping and collision handling (chaining/open addressing).
+- **Heap & Trie**: Min/Max heap with dual SVG tree and array representation during heapify, character-by-character prefix trie search.
 
-### 3. QuizKhelo-Inspired Practice Arena
-- Search and filter quizzes by Subject, Topic, Difficulty (*Easy, Medium, Hard, Expert*), and Question count.
-- Self-paced practice with instant or end-of-quiz answer explanations.
+### 3. 🧪 Interactive Specialized Labs
+- **Graph Lab**: SVG canvas editor. Drag nodes, add directed/undirected edges, edit weights. Run BFS, DFS, Dijkstra (with live distance table), Bellman-Ford, Floyd-Warshall, Prim's & Kruskal's MST, Topological Sort, and Cycle Detection.
+- **Tree Lab**: Dedicated BST and AVL tree simulator featuring balance factors on every node and rotation animations (LL, RR, LR, RL) plus Inorder, Preorder, Postorder, and Level-Order traversals.
+- **Sorting Lab**: Animated bar visualizer supporting 8 algorithms (Bubble, Selection, Insertion, Merge, Quick, Heap, Counting, Shell Sort) with custom array input and speed controls.
+- **Searching Lab**: Linear, Binary, Jump, Interpolation, Exponential, and Ternary Search with shrinking search bounds and pointer indicators ($L, R, M$).
+- **Dynamic Programming Lab**: 1D & 2D interactive DP tables for Fibonacci, LCS, Knapsack, Coin Change, LIS, and Matrix Chain Multiplication with dependency arrows and formulas.
+- **Backtracking Lab**: N-Queens chessboard simulator, Sudoku solver, Rat in a Maze, and Permutation generators with backtrack state highlights.
+- **Recursion Visualizer**: Function call stack tree expansion and unwinding animation.
+- **String Algorithms**: KMP (with LPS table construction), Rabin-Karp, and Z-Algorithm character-by-character matching.
+- **Complexity Lab**: Interactive Big-O curves ($O(1)$ to $O(2^n)$) with dynamic $n$ slider, operation count estimation, and comparative lookup tables.
 
-### 4. Interactive DSA Visual Learning Studio
-Graphical interactive visualizers integrated directly into learning modules:
-- **Arrays & Searching**: Step-by-step contiguous memory indexing and $O(\log n)$ Binary Search animation.
-- **Linked Lists**: Singly & Doubly Linked List pointer animations (head/tail insertions & deletions).
-- **Stacks & Queues**: Interactive LIFO Push/Pop containers and FIFO Enqueue/Dequeue queues.
-- **Binary Search Trees (BST)**: SVG tree layout with Inorder, Preorder, and Postorder traversal step highlighting.
-- **Graph Traversal**: Vertices and weighted edges with Breadth-First Search (BFS) and Depth-First Search (DFS) animations.
-- **Sorting Algorithms**: Animated bar graphs comparing Bubble Sort, Quick Sort, and Selection Sort.
+### 4. 🏆 Practice Mode & Quiz Arena
+- **Quiz Arena**: Gamified quiz system with timers, streaks, XP, difficulty tiers, and instant explanations.
+- **Interactive Practice**: Algorithmic tracing questions, complexity prediction, bug finding, and output prediction.
+- **Progress Tracking**: LocalStorage-backed activity charts, XP badges, accuracy stats, and streak counters.
 
-### 5. AI Quiz Generator
-- Built-in AI question generation service abstraction. Generates structured DSA & CS questions for any requested topic and difficulty.
+### 5. 📚 Searchable Cheat Sheets
+- Comprehensive lookup tables for Sorting, Searching, Linear DS, Trees, Graphs, DP patterns, and String matching.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Vite, TypeScript, Tailwind CSS, Lucide React, Framer Motion, Recharts, Socket.IO Client, Canvas-Confetti, QRCode SVG.
-- **Backend**: Node.js, Express, TypeScript, Socket.IO, MongoDB (with automatic in-memory fallback), JWT Authentication, bcryptjs.
+- **Framework**: React 18, Vite 5, TypeScript 5
+- **Styling & Motion**: Tailwind CSS 3, Framer Motion 11
+- **Icons & UI**: Lucide React
+- **Charts**: Recharts & Custom SVG Canvas engines
 
 ---
 
 ## 🚀 Quick Start Guide
 
 ### 1. Installation
-Clone the repository and install dependencies for root, server, and client:
 ```bash
-# Install dependencies across root, server, and client
-npm run install:all
+cd client
+npm install --legacy-peer-deps
 ```
 
-### 2. Pre-load Seed Data
-Populate 20+ DSA & CS quizzes along with demo teacher and student accounts:
+### 2. Development Server
+Start local Vite development server:
 ```bash
-npm run seed
+npm run dev
 ```
+Open `http://localhost:5173/CodeX/` (or the port specified in terminal output).
 
-### 3. Run Development Servers
-Start both backend (PORT 5000) and frontend (PORT 5173) concurrently:
+### 3. Production Build
 ```bash
-# Terminal 1: Start Backend
-npm run dev:server
-
-# Terminal 2: Start Frontend
-npm run dev:client
+npm run build
 ```
-Open `http://localhost:5173` in your browser.
-
----
-
-## 🔑 Demo Credentials
-
-| Role | Email | Password | Features Access |
-| :--- | :--- | :--- | :--- |
-| **Teacher** | `teacher@quizarena.com` | `password123` | Quiz builder, AI generator, Host live rooms, View reports & CSV export |
-| **Student** | `student@quizarena.com` | `password123` | Join live rooms via code, Practice quizzes, DSA Studio, Leaderboards |
 
 ---
 
@@ -82,30 +77,46 @@ Open `http://localhost:5173` in your browser.
 
 ```
 CodeX/
-├── server/                      # Node.js + Express + Socket.IO Backend
+├── client/
 │   ├── src/
-│   │   ├── config/              # DB connection & fallback store
-│   │   ├── controllers/         # Auth, Quiz, Room, Class, Report controllers
-│   │   ├── middleware/          # JWT & Role authorization middleware
-│   │   ├── models/              # Mongoose database schemas
-│   │   ├── routes/              # Express API endpoints
-│   │   ├── seed/                # Seed database script
-│   │   ├── services/            # AI Generator service abstraction
-│   │   ├── socket/              # Real-time Socket.IO room state machine
-│   │   └── server.ts            # Main server entry
-│   ├── package.json
-│   └── tsconfig.json
-├── client/                      # Vite + React + Tailwind CSS Frontend
-│   ├── src/
-│   │   ├── components/          # Reusable UI components & Navbar
-│   │   ├── context/             # AuthContext, SocketContext, ThemeContext
-│   │   ├── pages/               # Landing, Auth, Dashboards, Live Room, Studio
-│   │   ├── services/            # Axios API client
-│   │   ├── types/               # TypeScript interfaces
-│   │   ├── visualizers/         # Interactive DSA Visualizer components
-│   │   ├── App.tsx              # Router & Protected routes
+│   │   ├── components/
+│   │   │   ├── layout/          # Sidebar, TopBar, Layout wrapper
+│   │   │   ├── ui/              # AnimationControls, CodePanel, CommandPalette, AlgoCard
+│   │   │   └── charts/          # BigOChart, Progress charts
+│   │   ├── engine/
+│   │   │   ├── types.ts         # AlgoStep & VisualState types
+│   │   │   ├── useAnimationEngine.ts  # Play/pause/step animation engine
+│   │   │   └── useProgress.ts   # LocalStorage progress hook
+│   │   ├── visualizers/         # 15+ DSA visualizer modules
+│   │   │   ├── arrays/          # ArrayVisualizer & algorithms
+│   │   │   ├── linkedlists/     # LinkedListVisualizer
+│   │   │   ├── stacks/          # StackVisualizer
+│   │   │   ├── queues/          # QueueVisualizer
+│   │   │   ├── hashmaps/        # HashMapVisualizer
+│   │   │   ├── heaps/           # HeapVisualizer
+│   │   │   ├── tries/           # TrieVisualizer
+│   │   │   ├── trees/           # BST, AVL, Traversals
+│   │   │   ├── graphs/          # GraphCanvas & graph algorithms
+│   │   │   ├── sorting/         # SortingVisualizer & 8 sorts
+│   │   │   ├── searching/       # SearchVisualizer & 6 searches
+│   │   │   ├── dp/              # DPVisualizer & table logic
+│   │   │   ├── backtracking/    # N-Queens, Sudoku, Maze
+│   │   │   ├── strings/         # StringVisualizer (KMP, Z, etc.)
+│   │   │   └── recursion/       # RecursionVisualizer
+│   │   ├── pages/               # HomePage, Learn, Labs, QuizArena, CheatSheets, etc.
+│   │   ├── data/                # DSA educational content, quiz bank, cheat sheets
+│   │   ├── styles/              # Dark glassmorphism global CSS
+│   │   ├── App.tsx              # Router setup
 │   │   └── main.tsx
 │   ├── package.json
-│   └── tsconfig.json
+│   └── vite.config.ts
+├── .github/workflows/deploy.yml # GitHub Actions deployment
 └── README.md
 ```
+
+---
+
+## 🌐 Deployment
+
+This project deploys automatically to GitHub Pages via GitHub Actions:
+- **Live URL**: [https://suhas-saur.github.io/CodeX/](https://suhas-saur.github.io/CodeX/)
