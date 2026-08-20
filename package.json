@@ -1,0 +1,27 @@
+{
+  "name": "quiz-arena",
+  "version": "1.0.0",
+  "description": "QuizArena - Modern Full-Stack DSA Visual Learning & Collaborative Live Quiz SaaS",
+  "main": "server/src/server.ts",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": [
+    "quiz",
+    "dsa",
+    "visualizer",
+    "learning",
+    "socket.io",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "QuizArena Team",
+  "license": "MIT"
+}
