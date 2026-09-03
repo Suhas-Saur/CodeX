@@ -5,11 +5,11 @@
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-suhas--saur.github.io%2FCodeX-00d4ff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://suhas-saur.github.io/CodeX/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-7c3aed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Suhas-Saur/CodeX)
-[![License](https://img.shields.io/badge/License-MIT-00ff9f?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-00ff9f?style=for-the-badge)](https://github.com/Suhas-Saur/CodeX/blob/main/LICENSE)
 
 <br />
 
-[![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite_5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
@@ -19,7 +19,7 @@
 
 **AlgoForge** is a next-generation, dark-first interactive visual learning platform and algorithm simulator designed for software engineers, computer science students, and interview candidates. Built from scratch with a futuristic glassmorphism developer interface, AlgoForge turns abstract data structures and complex algorithms into step-by-step, inspectable execution models.
 
-[Explore Visualizers](#-interactive-labs--visualizers) • [Live Demo](#-live-demo--deployment) • [Quick Start](#-quick-start) • [Architecture](#-architecture) • [Command Palette](#-keyboard-shortcuts)
+[🚀 Live Demo](#live-demo) • [🧪 Interactive Labs](#interactive-labs) • [📦 Data Structures](#data-structures) • [🎮 Quiz Arena](#gamification) • [⌨️ Shortcuts](#keyboard-shortcuts) • [🏗️ Architecture](#architecture) • [⚡ Quick Start](#quick-start)
 
 ---
 
@@ -27,33 +27,35 @@
 
 <br />
 
-## 🌐 Live Demo & Deployment
+<h2 id="live-demo">🌐 Live Demo & Deployment</h2>
 
-> ### 🔗 **Official Web Application**: [https://suhas-saur.github.io/CodeX/](https://suhas-saur.github.io/CodeX/)
-> *(Localhost preview: `http://localhost:5174/CodeX/`)*
-
-<details open>
-<summary><b>ℹ️ Is the Live Demo link returning 404? Click here for the quick 1-minute fix!</b></summary>
-
-<br />
-
-If you see a GitHub **404 Not Found** page when opening the link, it is because **GitHub Pages requires the repository to be Public** (or configured in your repo settings):
-
-1. **Set Repository to Public** *(GitHub Pages is free for public repositories)*:
-   - Go to your repository: [github.com/Suhas-Saur/CodeX](https://github.com/Suhas-Saur/CodeX)
-   - Click **Settings** ⚙️ $\rightarrow$ Scroll down to **Danger Zone** $\rightarrow$ Click **Change repository visibility** $\rightarrow$ Select **Make public**.
-2. **Enable GitHub Pages**:
-   - Go to **Settings** $\rightarrow$ **Pages** (in the left sidebar).
-   - Under **Build and deployment** $\rightarrow$ **Source**:
-     - **Option A (Instant - Recommended)**: Select **Deploy from a branch** $\rightarrow$ Branch: **`gh-pages`** $\rightarrow$ Folder: **`/ (root)`** $\rightarrow$ Click **Save**.
-     - **Option B (Automated Actions)**: Select **GitHub Actions** (the included `.github/workflows/deploy.yml` will automatically build and deploy on every push).
-3. Wait ~60 seconds and refresh [https://suhas-saur.github.io/CodeX/](https://suhas-saur.github.io/CodeX/).
-
-</details>
+### 🔗 **Live Demo URL**: [https://suhas-saur.github.io/CodeX/](https://suhas-saur.github.io/CodeX/)
+> 💻 **Local Preview URL**: [http://localhost:5173/CodeX/](http://localhost:5173/CodeX/)
 
 ---
 
-## 📸 Platform Highlights
+### ⚠️ Seeing GitHub "404 - There isn't a GitHub Pages site here"?
+
+If you see GitHub's 404 page when opening the live link, it is because **GitHub Pages must be turned on once in your repository settings**. Follow these 2 quick steps:
+
+#### Step 1: Make sure the Repository is Public
+GitHub Pages is **free for Public repositories**. If your repository is set to Private, GitHub blocks Pages from loading:
+1. Open [Repository Settings ⚙️](https://github.com/Suhas-Saur/CodeX/settings).
+2. Scroll to the very bottom to **Danger Zone**.
+3. Under **Change repository visibility**, click **Change visibility** $\rightarrow$ **Make public**.
+
+#### Step 2: Enable GitHub Pages from `gh-pages` Branch
+The production build is already generated and pushed to your **`gh-pages`** branch (with `.nojekyll` and `404.html` SPA routing):
+1. Go directly to [Repository Pages Settings](https://github.com/Suhas-Saur/CodeX/settings/pages).
+2. Under **Build and deployment** $\rightarrow$ **Source**:
+   - Select **Deploy from a branch**.
+   - Under **Branch**, select **`gh-pages`** and folder **`/ (root)`**.
+   - Click **Save** 💾.
+3. Refresh [https://suhas-saur.github.io/CodeX/](https://suhas-saur.github.io/CodeX/) after ~30 seconds!
+
+---
+
+<h2 id="platform-preview">📸 Platform Highlights</h2>
 
 ```
 +---------------------------------------------------------------------------------------+
@@ -76,7 +78,7 @@ If you see a GitHub **404 Not Found** page when opening the link, it is because 
 
 ---
 
-## 🧪 Interactive Labs & Visualizers
+<h2 id="interactive-labs">🧪 Interactive Labs & Visualizers</h2>
 
 AlgoForge contains dedicated, fully-functional simulation engines — **zero placeholder buttons, zero static mockups**. Every interaction computes real algorithm states:
 
@@ -94,7 +96,7 @@ AlgoForge contains dedicated, fully-functional simulation engines — **zero pla
 
 ---
 
-## 📦 Data Structures Covered
+<h2 id="data-structures">📦 Data Structures Covered</h2>
 
 All data structures feature memory address representation, array/pointer inspection, multi-language code snippets (**C++**, **Java**, **Python**, **JavaScript**), and Big-O breakdown:
 
@@ -109,7 +111,7 @@ All data structures feature memory address representation, array/pointer inspect
 
 ---
 
-## 🎮 Gamification & Practice
+<h2 id="gamification">🎮 Gamification & Practice</h2>
 
 - **Quiz Arena**: Timed interview challenges (10-question sprint, 30-question marathon, timed mock interview), immediate visual explanation for correct & incorrect answers.
 - **Practice Mode**: Categorized challenges (*Predict Output, Find the Bug, Identify Complexity, Algorithm Tracing*).
@@ -118,7 +120,7 @@ All data structures feature memory address representation, array/pointer inspect
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+<h2 id="keyboard-shortcuts">⌨️ Keyboard Shortcuts</h2>
 
 | Shortcut | Action |
 | :--- | :--- |
@@ -131,7 +133,7 @@ All data structures feature memory address representation, array/pointer inspect
 
 ---
 
-## 🏗️ Architecture
+<h2 id="architecture">🏗️ Architecture</h2>
 
 AlgoForge follows a decoupled engine architecture separating algorithm execution, visual state representation, and UI controls:
 
@@ -166,7 +168,7 @@ flowchart TD
 
 ---
 
-## 🚀 Quick Start
+<h2 id="quick-start">🚀 Quick Start</h2>
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (version 18 or 20+)
@@ -201,18 +203,18 @@ The optimized bundle will be created in `client/dist` (including `index.html` an
 
 ---
 
-## 🛠️ Technology Stack
+<h2 id="tech-stack">🛠️ Technology Stack</h2>
 
 - **Client**: [React 18](https://react.dev/), [TypeScript 5](https://www.typescriptlang.org/), [Vite 5](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS 3](https://tailwindcss.com/) with custom neon & glassmorphism theme tokens
 - **Animations**: [Framer Motion 11](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Analytics & Charts**: [Recharts](https://recharts.org/)
-- **Deployment**: [GitHub Pages](https://pages.github.com/) via GitHub Actions / `gh-pages`
+- **Deployment**: [GitHub Pages](https://pages.github.com/) via `gh-pages` branch & GitHub Actions
 
 ---
 
-## 🤝 Contributing
+<h2 id="contributing">🤝 Contributing</h2>
 
 Contributions are always welcome! If you'd like to add a new algorithm or visualization:
 
@@ -224,9 +226,9 @@ Contributions are always welcome! If you'd like to add a new algorithm or visual
 
 ---
 
-## 📄 License
+<h2 id="license">📄 License</h2>
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/Suhas-Saur/CodeX/blob/main/LICENSE) file for details.
 
 ---
 
